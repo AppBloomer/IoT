@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.walinnsinnovation.iot.Activity.LightSettings">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/headre"
+        android:visibility="visible">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_leftarrow"
+            android:id="@+id/left_arrow"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/header"
+            android:textSize="18dp"
+            android:text="Lights"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginLeft="10dp"/>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headre"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="@string/light"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="@string/timer"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="@string/repeat"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/mode"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/music"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/switch_bg"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp">
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="On"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Off" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                   android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorPrimary"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="23dp"
+                    android:id="@+id/lineartimer"
+                    android:layout_marginLeft="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="2"
+                        android:text="--"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:id="@+id/txthr"
+                        android:background="@drawable/bottom_line"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="2"
+                        android:text="hr"
+                        android:id="@+id/txthrvisible"
+                        android:visibility="gone"
+                        android:layout_marginLeft="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="2"
+                        android:text="--"
+                        android:background="@drawable/bottom_line"
+                        android:textColor="@color/black"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:id="@+id/txtmin"
+                        android:layout_marginLeft="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="4"
+                        android:text="mins"
+                        android:id="@+id/txtminvisible"
+                        android:visibility="gone"
+                        android:layout_marginLeft="8dp"/>
+                </LinearLayout>
+                <EditText
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edt_bg"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="6dp" />
+                <EditText
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edt_bg"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="6dp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@mipmap/ic_add" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_circle"
+        android:layout_below="@+id/linearcontent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        />
+    <com.madrapps.pikolo.HSLColorPicker
+        android:id="@+id/colorPicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lightness_indicator_stroke_width="0dp"
+        app:arc_length="110"
+        app:hue_start_angle="30"
+        app:lightness_start_angle="270"
+        app:radius_offset="20dp"
+        app:saturation_indicator_stroke_color="@color/colorPrimary"
+        app:saturation_start_angle="150"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

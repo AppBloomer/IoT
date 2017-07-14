@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_corner"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bulb"
+            android:id="@+id/img_grid"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_corner"
+        android:layout_marginLeft="10dp"
+        android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:id="@+id/txtdevice"/>
+    </RelativeLayout>
+
+</LinearLayout>

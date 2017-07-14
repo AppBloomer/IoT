@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/gradint_bg"
+    tools:openDrawer="start">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+             <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                 android:layout_gravity="right"
+                android:foregroundGravity="right"
+                android:textAlignment="viewStart"
+                 android:background="@drawable/tab_bg"
+                 app:titleTextColor="@color/white"
+                 android:touchscreenBlocksFocus="false"
+                tools:ignore="RtlCompat">
+                 <ImageView
+                     android:id="@+id/img_home"
+                     android:layout_width="40dp"
+                     android:layout_height="40dp"
+                     android:layout_gravity="center"
+                     android:src="@mipmap/app_icon"
+                     android:padding="2dp"
+                      />
+                 <ImageView
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:layout_gravity="end"
+                     android:src="@mipmap/ic_search"
+                     android:layout_marginRight="10dp"
+                     android:padding="2dp"/>
+             </android.support.v7.widget.Toolbar>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/containerone"
+        android:visibility="gone">
+
+    </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/containertwo"
+            android:visibility="gone">
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/containerthree"
+            android:visibility="gone">
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/containerfour"
+            android:visibility="gone">
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/containerfive"
+            android:visibility="gone">
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tab_fg"
+            android:visibility="gone">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+    <!-- The drawer, you can change the menu contents dynamically -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+         app:theme="@style/NavigationDrawerStyle"
+        app:headerLayout="@layout/header_layout"
+          app:menu="@menu/menu_nevu" >
+        <TextView
+            android:id="@+id/txtlogout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:text="Logout"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@color/red_opt"/>
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

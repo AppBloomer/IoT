@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"> <!-- And this checkable behavior behaves strangely for some reason -->
+        <item
+            android:id="@+id/homeScreen"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/hall"
+            android:title="Updates" />
+        <item
+            android:id="@+id/garden"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/work"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/userprofile"
+            android:title="User Profile"
+            android:visible="false"/>
+        <item
+            android:id="@+id/language"
+            android:title="Language"
+            android:visible="false"/>
+        <item android:id="@+id/change_pass"
+            android:title="Change Password"
+            android:visible="false"/>
+        <item android:id="@+id/nav_update_app"
+            android:title="Update App"
+            android:visible="false"/>
+        <item android:id="@+id/update_firm"
+            android:title="Update Firmware"
+            android:visible="false"/>
+        <item android:id="@+id/factory_reset"
+            android:title="Factory Reset"
+            android:visible="false"/>
+    </group>
+
+
+
+
+
+
+
+</menu>

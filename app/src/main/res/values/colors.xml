@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FD5959</color>
+    <color name="colorPrimaryDark">#E62A2D</color>
+    <color name="colorAccent">#002F44</color>
+    <color name="black">#000000</color>
+    <color name="txt_color">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="dark_red">#E62A2D</color>
+    <color name="red">#FD5959</color>
+    <color name="gray">#EDE9E9</color>
+    <color name="red_opt">#66FD5959</color>
+    <color name="inticator">#F9AC95</color>
+    <color name="tab_bg">#002F44</color>
+    <color name="tab_text">#ED1B2F</color>
+    <color name="grid_bg">#E3714D</color>
+    <color name="gray_l">#F0F0F0</color>
+
+</resources>

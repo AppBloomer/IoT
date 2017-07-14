@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:gravity="center">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_view"
+        android:scaleType="fitCenter"
+         />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:id="@+id/value"
+            android:text="Secure Conection"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#DAE2F2"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/pager_text"/>
+    </LinearLayout>
+</LinearLayout>
